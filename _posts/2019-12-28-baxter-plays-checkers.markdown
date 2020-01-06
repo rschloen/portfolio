@@ -31,4 +31,4 @@ The package we created allows you to play a full, competitive game of checkers a
 
 To see the full details and documentation pertaining to this project, please visit this [Github repository](https://github.com/rschloen/final-project-checkers).
 
-The group members involved in this project where: Maurice Rahme, Jordan Zeeb, and Taoran Zhang
+The group members involved in this project were: Maurice Rahme, Robert Schloen, Jordan Zeeb, and Taoran Zhang
