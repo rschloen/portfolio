@@ -3,7 +3,6 @@ layout: post
 title:  "Baxter Plays Checkers"
 featured-img: baxter_checkers
 date:   2019-12-28 14:46:01 -0600
-categories: jekyll update
 ---
 
 This project was completed as the final project for ME 495: Embedded Systems in Robotics. Given the theme of recreational robots, my group chose to teach Rethink's Baxter robot how to play checkers. We created a ROS package to control the Baxter robot and wrote nodes for the major components of the project: computer vision, game logic and artificial intelligence, manipulation, and a state machine.
