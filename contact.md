@@ -4,6 +4,6 @@ title: Contact Me
 permalink: /contact/
 ---
 
-## Email: rschloen@gmail.com
+## Email: <mailto:rschloen@gmail.com>
 
 ## Phone: 708-704-0540

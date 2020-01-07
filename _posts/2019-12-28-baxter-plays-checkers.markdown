@@ -26,7 +26,7 @@ Our group used a state machine to integrate the different components of our pack
 
 
 The package we created allows you to play a full, competitive game of checkers against Baxter as demonstrated in this video:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6ZOXy3TKYeM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"> </iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6ZOXy3TKYeM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
 
 To see the full details and documentation pertaining to this project, please visit this [Github repository](https://github.com/rschloen/final-project-checkers).
 
