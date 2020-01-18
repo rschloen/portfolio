@@ -214,13 +214,13 @@ table th,table td{padding:6px 13px;border:1px solid #ededed}
 .highlight .o{color:#000000;font-weight:bold}
 .highlight .w{color:#bbbbbb}
 .highlight{background-color:#f8f8f8}
-.hero{margin:3.75rem auto 0;min-height:16.25rem;width:100%;position:relative;background-color:#dde5ea;background-repeat:no-repeat;background-position:50%;background-size:cover}
+.hero{margin:3.75rem auto 0;min-height:16.25rem;width:100%;position:relative;background-color:#dde5ea;background-repeat:no-repeat;background-position:center;background-size:cover}
 /* height in line below sets hero banner height */
 @media only screen and (min-width: 62em){.hero{margin:0 auto;height:22em}}
 .hero::before{position:absolute;display:block;content:"";top:0;left:0;width:100%;height:100%;background:rgba(52,56,81,0.3)} /*reduce alpha */
 .hero--small{margin:3.75rem auto 0;min-height:8.75rem;width:100%;position:relative;background-color:#313237}
 @media only screen and (min-width: 62em){.hero--small{height:12.5em}}
-.hero--small::before{position:absolute;display:block;content:"";top:0;left:0;width:100%;height:100%;background:rgba(52,56,81,0.8)}
+.hero--small::before{position:absolute;display:block;content:"";top:0;left:0;width:100%;height:100%;background:rgba(52,56,123,0.8)}
 .hero__wrap{position:absolute;margin:auto;top:50%;left:50%;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);text-align:center;color:rgba(255,255,255,0.8);width:100%;max-width:90%;z-index:1}
 @media only screen and (min-width: 48em){.hero__wrap{max-width:40em}}
 .hero__wrap .hero__title{font-size:1.8em;color:#fff}
