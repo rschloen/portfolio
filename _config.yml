@@ -3,7 +3,7 @@ title: Robert's Portfolio # your site title
 author: Robert Schloen # You :P
 description: > # Meta description of Homepage
   Portfolio of Robotics Projects
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/portfolio/" # the subpath of your site, e.g. /blog
 url: "https://rschloen.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
 # SEO PLUGIN
