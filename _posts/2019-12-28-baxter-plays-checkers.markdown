@@ -5,8 +5,8 @@ featured-img: baxter_checkers
 date:   2019-12-28 14:46:01 -0600
 ---
 
-![Baxter plays checkers](https://github.com/rschloen/portfolio/blob/master/assets/img/posts/baxter_checkers.jpg)
-We taught Rethink's Baxter robot how to play checkers! This project was completed as the final project for ME 495: Embedded Systems in Robotics, and all groups were given the theme of recreational robots. My group created a ROS package to control the Baxter robot and wrote nodes for the major components of the project: computer vision, game logic and artificial intelligence, manipulation, and a state machine.
+
+#### We taught Rethink's Baxter robot how to play checkers! This project was completed as the final project for ME 495: Embedded Systems in Robotics, and all groups were given the theme of recreational robots. My group created a ROS package to control the Baxter robot and wrote nodes for the major components of the project: computer vision, game logic and artificial intelligence, manipulation, and a state machine.
 
 
 # Computer vision
