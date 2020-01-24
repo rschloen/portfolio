@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 # About J. Robert Schloen
-I am currently enrolled in the Masters of Science in Robotics at Northwestern University. I received my Bachelors of Science in Biomedical Engineering at George Washington University in 2019. I am interested in medical and assistive robotics, human computer interaction, and machine learning and artificial intelligence.
+I am currently enrolled in the Master of Science in Robotics program at Northwestern University. I received my Bachelor of Science in Biomedical Engineering at George Washington University in 2019. My main fields of interest are medical and assistive robotics and human computer interaction, with a focus on machine learning, artificial intelligence, and brain computer interfaces.
