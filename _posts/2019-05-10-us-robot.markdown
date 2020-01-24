@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Ultrasound Robot for Cardiac Toxicity Detection"
+
+date:   2019-05-10 14:46:01 -0600
+---
+
+The goal of this project was to develop a semi-autonomous robotic ultrasound system that can hold an ultrasound
+probe and position it correctly to take an ultrasound image of a patient's heart that can be used to monitor for cardiac toxicity. The robotic ultrasound system consisted of a Kinova JACO2 robot arm, VSCAN ultrasound probe, SynTouch BioTac sensor, a custom graphical user interface, and a CNN image classifier.
+
+Cardiac toxicity can be an unfortunate side affect of chemotherapy treatment, but is detectable using ultrasound images of the heart. Having early warning to the onset of cardiac toxicity can save a patients life, but due to the time and labor needed to perform the ultrasounds, widespread monitoring is difficult. Another issue is the variability in the positioning of the probe between technicians which can affect consistent identification of cardiac toxicity. The solution we proposed was a robotic ultrasound system that can consistently and accurately take ultrasound images over many sessions with minimal technician interaction. 
