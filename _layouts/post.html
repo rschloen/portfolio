@@ -19,12 +19,12 @@ layout: compress
 
 {% include header.html %}
 
-  <!-- {% if page.featured-img %} -->
+  {% if page.featured-img %}
   <div class="hero--small lazyload"> <!--data-bg="{{ site.url }}{{ site.baseurl }}/assets/img/posts/{{ page.featured-img }}.jpg"*/-->
-  <!-- {% else %}
-  <div class="hero dark-bg">
-  {% endif %} -->
-    <div class="hero__wrap">
+  {% else %}
+  <div class="hero--small dark-bg">
+  {% endif %}
+  <div class="hero__wrap">
       <!-- {% if post.categories or page.categories %}
         <div class="hero__categories">
           {% if post %}
@@ -58,7 +58,8 @@ layout: compress
   <main class="site__content">
     <div class="container">
       <article class="post-content" itemprop="articleBody">
-        <img src= "{{ site.url }}{{ site.baseurl }}/assets/img/posts/{{ page.featured-img }}.jpg"?raw=true alt="baxter_checkers.jpg">
+        <img src= "{{ site.url }}{{ site.baseurl }}/assets/img/posts/{{ page.featured-img }}.jpg"?raw=true alt="baxter_checkers.jpg" class=center>
+
 
         {{ content }}
 
