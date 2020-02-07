@@ -23,7 +23,7 @@ navigation: # Navigation links
   - {name: 'About', link: '/about'}
   - {name: 'Contact', link: '/contact'}
 
-tagline: >
+tagline: 
 
 hero_img: posts/robot_cover_photo.jpg # Main background image: use the path from /assets/img/ => This will output /assets/img/posts/sleek_lg.jpg
 

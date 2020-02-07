@@ -8,6 +8,12 @@ figure{margin:1em 40px}
 hr{-webkit-box-sizing:content-box;box-sizing:content-box;height:0;overflow:visible}
 pre{font-family:monospace, monospace;font-size:1em}
 a{background-color:transparent;-webkit-text-decoration-skip:objects}
+#link_bar a{font-size:25px;font-weight:bold;float:center;color:white;text-decoration: none;}
+#link_bar a:link{color:white;background-color: transparent;border-bottom: 1px dashed white}
+#link_bar a:visited{color:white;border-bottom: 1px solid white}
+#link_bar a:hover{color:blue;border-bottom: 1px solid blue}
+#link_bar a:active{text-decoration:none;}
+
 abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}
 b,strong{font-weight:inherit}
 b,strong{font-weight:bolder}
