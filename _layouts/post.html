@@ -58,8 +58,9 @@ layout: compress
   <main class="site__content">
     <div class="container">
       <article class="post-content" itemprop="articleBody">
-        <img src= "{{ site.url }}{{ site.baseurl }}/assets/img/posts/{{ page.featured-img }}.jpg"?raw=true alt="baxter_checkers.jpg" class=center>
-
+        {% if page.page-img %}
+        <img src= "{{ site.url }}{{ site.baseurl }}/assets/img/posts/{{ page.page-img }}.jpg"?raw=true class=center>
+        {% endif %}
 
         {{ content }}
 

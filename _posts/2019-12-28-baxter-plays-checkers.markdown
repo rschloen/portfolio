@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Baxter Plays Checkers"
+page-img: baxter_checkers
 featured-img: baxter_checkers
 date:   2019-12-28 14:46:01 -0600
 ---
