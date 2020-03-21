@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Surface EMG Control for a Robotic Hand"
-featured-img: open_bionics
+featured-img: demo_thumb
 date:   2019-01-10 14:46:01 -0600
 ---
 
