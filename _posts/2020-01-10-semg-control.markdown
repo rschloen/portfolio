@@ -24,6 +24,7 @@ Deep learning requires a lot of data in order to accurately learn the relationsh
 The type of neural network I chose to use for this project was a convolutional neural network (CNN). Convolutional neural networks are a type of deep learning that are commonly used to classify images. The convolutional layers pass a kernel, or filter, over the image and extract a feature map representing an abstract or lower level feature (such as lines on your face) within the image. After passing through multiple convolutional layers, these features are then connected to fully connected, or dense, layers and the relationships between the now connected features are learned and used to classify the image. For this project, the image is a interval of EMG data that is 260 ms long equaling 52 samples since the Myo Armband has a sample rate of 200 Hz. With 52 samples, with 8 values per sample, you now have a 52 by 8 by 1 (height, length, depth) image that you can pass through the network.
 
 ![Example CNN](assets/img/posts/sample_CNN.png)
+* Diagram of enhanced CNN architecture from [3] which I adapted to create the final CNN
 
 
 ### Training and Hyperparameter Tuning
