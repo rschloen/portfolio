@@ -26,7 +26,7 @@ the data that I used for this project. That was Thalmic Labs' Myo Armband, which
 
 The type of neural network I chose to use for this project was a convolutional neural network (CNN). Convolutional neural networks are a type of deep learning that are commonly used to classify images. The convolutional layers pass a kernel, or filter, over the image and extract a feature map representing an abstract or lower level feature (such as lines on your face) within the image. After passing through multiple convolutional layers, these features are then connected to fully connected, or dense, layers and the relationships between the now connected features are learned and used to classify the image. For this project, the image is a interval of EMG data that is 260 ms long equaling 52 samples since the Myo Armband has a sample rate of 200 Hz. With 52 samples, with 8 values per sample, you now have a 52 by 8 by 1 (height, length, depth) image that you can pass through the network.
 
-<figure style="float: right;">
+<figure style="text-align: center;">
     <img src="../../../assets/img/posts/sample_CNN.png" alt="Example CNN">
     <figcaption>Diagram of enhanced CNN architecture from [3] which I adapted to create the final CNN </figcaption>
 </figure>
@@ -37,12 +37,10 @@ The type of neural network I chose to use for this project was a convolutional n
 To train the network, the dataset was split into training, validation, and testing sets, where each sample in the sets consists of an input and a label. The training consisted of running a number of epochs, which is where you pass all of your training data through your model and update the model based on how well it performed; that is, whether the output of the model matched the label that came with the input. After you run a training epoch, you then run a validation epoch, where you pass all the validation data through your model to see how well it is performing on data it has not seen before. The model is not updated during validation. Once the desired number of epochs has been completed, or your model is not improving anymore, a final testing epoch is run to evaluate how well the fully trained model performs on never before seen data.
 
 Using this training loop, the hyperparameters, the values and functions set before training begins, can be tuned. An example of a common hyperparameter is the learning rate for the optimizer that updates the model. By looping through a number of models with different potential learning rates and evaluating the models, the best learning can be found. Using this idea, I tuned the hyperparameters for my network in order to achieve the best performance.
-<figure style="float: right;">
-    <img src="../../../assets/img/posts/sample_CNN.png" alt="Example CNN">
-    <figcaption>Diagram of enhanced CNN architecture from [3] which I adapted to create the final CNN </figcaption>
+<figure style="text-align: center;">
+    <img src="../../../assets/img/posts/emg_gesture_id_1cycle.png" alt="Example CNN">
+    <figcaption>Sample of 8 channel EMG data and corresponding label </figcaption>
 </figure>
-![Example data](../../../assets/img/posts/emg_gesture_id_1cycle.png)
-* Sample of 8 channel EMG data and corresponding label
 
 To learn more about this project, visit this project's [Github repository](https://github.com/rschloen/semg_control).
 
