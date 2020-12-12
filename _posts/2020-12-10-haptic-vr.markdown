@@ -1,0 +1,48 @@
+---
+layout: post
+title:  "Interface for Epidermal Actuators"
+page-img: 
+featured-img: haptic_vr_demo
+date:   2020-12-10 14:46:01 -0600
+---
+
+### In collaboration with a team from Dr. John Roger's Research Group at Northwestern University, I developed a touch screen user interface to control epidermal haptic actuator devices through near-field communication (NFC). The user interface gives the user control of the intensity and pulsing speeds of the actuators, single and multi touch point manual activation of the haptic actuators, and activation of pre-programmed sequences with touch gestures. 
+
+# The GUI
+<figure>
+    <img src="../../../assets/img/posts/12112020_config_page.png" alt="Configuration Page" style="width:49%;height:auto;">
+    <img src="../../../assets/img/posts/12112020_virtual_touch_page.png" alt="Virtual Touch Page" style="width:49%;height:auto;">
+</figure>
+For an interactive experience, visit [the GUI webpage](http://epidermal-actuators.surge.sh/).
+
+## Configuration Page
+The Configuration Page gives the user control of various settings to help get the haptic devices set up. The user can manually control the route through which commands are sent to the NFC antenna, control the state of the NFC antenna, and add, remove, and select a device to make it active. 
+
+The Configuration Page also allows the user to customize the pulse timing and intensity of the haptic actuators. The haptic devices contain an array of small vibratory actuators that can vibrate at different frequencies to produce different intensities. For testing and demonstration purposes, LEDs can be used in place of the vibratory actuators. There are a total of 5 active modes the haptic device can be in: continuous, continous or single pulse with high frequency pulsing, and continuous or single pulse with high and low frequency pulsing. The high and low frequencies control the intensity and on/off interval of the haptic actuators to provide different sensations. There is an array of hexagons, representing a smaller section of a complete haptic device, which can be used to test the different timings. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2XN8ait5aXA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+## Virtual Touch Page
+The Virtual Touch Page gives the user control of the entire array of hexagons that mirrors a complete device. The devices will use the antenna settings, active device, and timings set by the user in the Configuration Page. The user can select devices of different arrangements that are shown with their placement on the body. 
+
+### Manual Activation
+When the Live mode is selected, the activation of the haptic actuators is controlled manually by the user. Using a touch sensitive screen, any number of touch points can be used to activate multiple haptic actuators at a time. The user can tap individual hexagons or slide their finger, or fingers, around to activate them as the touch point passes through the hexagons. While active, the color of the hexagons change to provide visual feedback to the user. 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0H-zjYoenwY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+This project and the development of these devices is still currently ongoing at the time of this post, and there are problems that are being addressed that can cause unwanted or unexpected behavior in the activation of the actuators.
+
+### Presets
+The haptic devices are programmed with "presets" that can be triggered by the user to activate a sequence of haptic actuators in a set pattern. One example of the available presets is the "Sweep" directions which can be triggered by swiping across the hexagons in the 8 cardinal directions. The Sweep preset activates the actuators a row at a time in the direction of the swipe. Like with manual control, the time the actuators are on and off is set using the Timing Configuration on the Configuration page. A demonstration of some presets with different set timings can be seen in the following video clip. 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UUf93grzPi8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+For a closer look at the GUI, visit the [GUI's Github repository](https://github.com/qsib-cbie/epidermal-actuators-ui).
+
+# The BackEnd
+The GUI, the front end of the setup, sends commands over internet to the protocol host, or the back end, which then sends the commands in a format that the device understands. The protocol host supports several types of connections, through which it can communicate with the devices. Currently, usb and ethernet connections are available to send commands to the devices through an NFC antenna. A Bluetooth Low Energy (BLE) connection is under development, and will provide another communication option that doesn't rely on NFC. A "mock" connection is also now available, and is used to test commands when not connected to a physical device. The protocol host also allows for automated testing of connection types and protocol commands to ensure no errors are introduced throughout the development of new connections and protocols.
+
+Currently, the backend is only used for one protocol, the haptic protocol. The haptic protocol has the commands for controlling the haptic devices that are sent using the GUI used in this project. The protocol host is not dependent on the frontend and can be used for different protocols. As more protocols are developed for different devices and projects that use the supported connection types, they can be easily integrated into the protocol host. 
+
+For more information about the protocol host, visit the [protocol host's Github repository](https://github.com/qsib-cbie/protocol-host-rs).
